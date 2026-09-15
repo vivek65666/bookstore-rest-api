@@ -1,6 +1,8 @@
 # Bookstore REST API
 
-A REST API built with Python and FastAPI for managing bookstore inventory. The application provides CRUD operations, book search functionality, input validation, error handling, SQLite database integration, and interactive Swagger API documentation.
+A REST API built with Python and FastAPI for managing bookstore inventory.
+
+The application provides CRUD operations, book search functionality, input validation, error handling, SQLite database integration, Swagger API documentation, and Postman testing.
 
 ---
 
@@ -68,7 +70,7 @@ The API supports:
 
 ### Search
 
-Books can be searched using a keyword that matches the:
+Books can be searched using a keyword that matches:
 
 - Book title
 - Author name
@@ -112,14 +114,16 @@ The SQLite database file is:
 
 ```text
 bookstore.db
-6. API Endpoints
-Method	Endpoint	Description
-GET	/books/	Get all books
-POST	/books/	Create a new book
-GET	/books/search?keyword=python	Search books
-GET	/books/{book_id}	Get a book by ID
-PUT	/books/{book_id}	Update a book
-DELETE	/books/{book_id}	Delete a book
+
+| Method | Endpoint                       | Description       |
+| ------ | ------------------------------ | ----------------- |
+| GET    | `/books/`                      | Get all books     |
+| POST   | `/books/`                      | Create a new book |
+| GET    | `/books/search?keyword=python` | Search books      |
+| GET    | `/books/{book_id}`             | Get a book by ID  |
+| PUT    | `/books/{book_id}`             | Update a book     |
+| DELETE | `/books/{book_id}`             | Delete a book     |
+
 7. API Request Examples
 7.1 Get All Books
 
@@ -242,7 +246,7 @@ Author must contain at least one character.
 Price must be greater than zero.
 Quantity must be zero or greater.
 
-For example, the following type of data is invalid:
+For example, the following data is invalid:
 
 {
     "title": "",
@@ -305,11 +309,7 @@ DELETE book
 Search books
 404 error handling
 
-A Postman collection named:
-
-Bookstore REST API
-
-was created to organize the API requests.
+A Postman collection named Bookstore REST API was created to organize the API requests.
 
 The collection contains:
 
@@ -319,7 +319,33 @@ POST - Create Book
 PUT - Update Book
 DELETE - Delete Book
 GET - Search Books
-12. Project Structure
+
+## 12. Screenshots
+
+### Swagger API Documentation
+![Swagger API Documentation](screenshots/01-swagger-api-documentation.png)
+
+### Get All Books
+![Get All Books](screenshots/02-get-all-books.png)
+
+### Get Book by ID
+![Get Book by ID](screenshots/03-get-book-by-id.png)
+
+### Create Book
+![Create Book](screenshots/04-create-book.png)
+
+### Update Book
+![Update Book](screenshots/05-update-book.png)
+
+### Delete Book
+![Delete Book](screenshots/06-delete-book.png)
+
+### Search Books
+![Search Books](screenshots/07-search-books.png)
+
+---
+13. Project Structure
+
 Bookstore-REST-API/
 │
 ├── app/
@@ -342,7 +368,11 @@ Bookstore-REST-API/
 ├── bookstore.db
 ├── requirements.txt
 └── README.md
-13. File Description
+
+```text
+bookstore.db
+
+14. File Description
 main.py
 
 Creates the FastAPI application, configures the API information, creates the database tables, and includes the API routes.
@@ -380,7 +410,7 @@ screenshots/
 
 Contains screenshots documenting the API testing and Swagger documentation.
 
-14. Running the Project
+15. Running the Project
 Step 1: Open the Project Directory
 C:\Users\Vivek\Bookstore-REST-API
 Step 2: Create a Virtual Environment
@@ -400,7 +430,7 @@ The application will run at:
 http://127.0.0.1:8000
 Step 6: Open Swagger Documentation
 http://127.0.0.1:8000/docs
-15. Testing Results
+16. Testing Results
 
 The following API operations were successfully tested:
 
@@ -415,7 +445,7 @@ Missing book ID	Passed
 Input validation	Implemented
 Swagger documentation	Available
 Postman testing	Completed
-16. Sample Database Record
+17. Sample Database Record
 
 The current test database contains a sample book:
 
@@ -426,7 +456,7 @@ The current test database contains a sample book:
     "price": 599.0,
     "quantity": 10
 }
-17. REST API Concepts Demonstrated
+18. REST API Concepts Demonstrated
 
 This project demonstrates practical understanding of:
 
@@ -448,7 +478,7 @@ SQLAlchemy ORM
 SQLite
 API testing with Postman
 API documentation with Swagger
-18. Learning Outcomes
+19. Learning Outcomes
 
 Through this project, I gained practical experience in:
 
@@ -464,7 +494,7 @@ Handling API errors
 Testing APIs using Postman
 Using Swagger UI for API documentation
 Understanding HTTP methods and status codes
-19. Future Improvements
+20. Future Improvements
 
 The project can be extended with:
 
@@ -482,7 +512,7 @@ CI/CD pipeline
 
 These features are future improvements and are not currently implemented.
 
-20. Conclusion
+21. Conclusion
 
 The Bookstore REST API provides a functional backend system for managing bookstore inventory.
 
