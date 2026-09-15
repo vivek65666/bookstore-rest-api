@@ -122,7 +122,10 @@ PUT	/books/{book_id}	Update a book
 DELETE	/books/{book_id}	Delete a book
 7. API Request Examples
 7.1 Get All Books
-GET /books/
+
+GET
+
+/books/
 
 Returns all books available in the bookstore inventory.
 
@@ -138,7 +141,10 @@ Example response:
     }
 ]
 7.2 Create a Book
-POST /books/
+
+POST
+
+/books/
 
 Example request:
 
@@ -152,7 +158,10 @@ Example request:
 The API creates a new book and assigns a unique ID.
 
 7.3 Get Book by ID
-GET /books/{book_id}
+
+GET
+
+/books/{book_id}
 
 Example:
 
@@ -168,7 +177,10 @@ Example response:
     "quantity": 10
 }
 7.4 Update a Book
-PUT /books/{book_id}
+
+PUT
+
+/books/{book_id}
 
 Example:
 
@@ -186,7 +198,10 @@ Example request:
 The API updates the existing book information.
 
 7.5 Delete a Book
-DELETE /books/{book_id}
+
+DELETE
+
+/books/{book_id}
 
 Example:
 
@@ -198,7 +213,10 @@ Example response:
     "message": "Book deleted successfully"
 }
 7.6 Search Books
-GET /books/search?keyword=python
+
+GET
+
+/books/search?keyword=python
 
 The search checks the keyword against the book title and author.
 
@@ -295,12 +313,12 @@ was created to organize the API requests.
 
 The collection contains:
 
-GET  - Get All Books
-GET  - Get Book by ID
+GET - Get All Books
+GET - Get Book by ID
 POST - Create Book
-PUT  - Update Book
+PUT - Update Book
 DELETE - Delete Book
-GET  - Search Books
+GET - Search Books
 12. Project Structure
 Bookstore-REST-API/
 │
@@ -311,6 +329,15 @@ Bookstore-REST-API/
 │   ├── models.py
 │   ├── schemas.py
 │   └── routes.py
+│
+├── screenshots/
+│   ├── 01-swagger-api-documentation.png
+│   ├── 02-get-all-books.png
+│   ├── 03-get-book-by-id.png
+│   ├── 04-create-book.png
+│   ├── 05-update-book.png
+│   ├── 06-delete-book.png
+│   └── 07-search-books.png
 │
 ├── bookstore.db
 ├── requirements.txt
@@ -348,6 +375,10 @@ SQLite database file used to store book inventory.
 requirements.txt
 
 Contains the Python packages required to run the project.
+
+screenshots/
+
+Contains screenshots documenting the API testing and Swagger documentation.
 
 14. Running the Project
 Step 1: Open the Project Directory
