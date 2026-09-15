@@ -112,7 +112,7 @@ The `id` column is the primary key and uniquely identifies each book.
 
 The SQLite database file is:
 
-```text
+text
 bookstore.db
 
 | Method | Endpoint                       | Description       |
