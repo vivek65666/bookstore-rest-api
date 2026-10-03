@@ -526,4 +526,4 @@ Author
 
 Vivek C Raj
 
-BCA | Backend / Cloud / DevOps Learning Project
+BCA | Backend | Python / Cloud / DevOps Learning Project
